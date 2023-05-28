@@ -1,0 +1,15 @@
+{
+  "buildCommand": "pnpm build && pnpm bundle",
+  "builds": [
+    {
+      "src": "out/core/index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "out/core/index.js"
+    }
+  ],
+}
