@@ -112,4 +112,4 @@ git push
 
 > 如 `feat/posts-options`，则标题为：`feat(posts): more options for posts` 或 `feat(posts): 更多的文章管理选项`。社区管理员会按照您的修改大小来区分是否为 breaking change
 
-如果你的代码还缺乏部分尚未完成，请你点击 Draft Pull Request，而不是 Open Pull Request
+如果你的代码还缺乏部分尚未完成，请你点击 Draft Pull Request，而不是 Open Pull Request 
