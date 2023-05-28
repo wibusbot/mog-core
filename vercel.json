@@ -1,16 +1,15 @@
 {
   "version": 2,
-  "name": "mog-core-gateway",
   "builds": [
-    { "src": "out/core/index.js", "use": "@vercel/node" },
+    {
+      "src": "out/core/index.js",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
     {
-        "src": "/(.*)",
-        "dest": "out/core/index.js"
+      "src": "/(.*)",
+      "dest": "out/core/index.js"
     }
   ],
-  "github": {
-    "silent": true
-  }
 }
