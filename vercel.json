@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "out/core/index.js": {
+    "api/index.js": {
       "memory": 1024,
       "maxDuration": 10,
       "includeFiles": "out/core/**/*.js"
@@ -10,7 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "out/core/index.js"
+      "dest": "api/index.js"
     }
   ]
 }
