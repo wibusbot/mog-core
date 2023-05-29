@@ -1,5 +1,8 @@
 {
   "version": 2,
+  "installCommand": "pnpm install",
+  "outputDirectory": "out",
+  "buildCommand": "pnpm build && pnpm bundle",
   "builds": [
     {
       "src": "out/core/index.js",
