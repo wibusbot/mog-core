@@ -4,7 +4,7 @@
   "outputDirectory": "out",
   "buildCommand": "pnpm build && pnpm bundle",
   "framework": null,
-  "function": {
+  "functions": {
     "out/core/index.js": {
       "memory": 3008,
       "maxDuration": 30,
