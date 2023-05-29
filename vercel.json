@@ -1,16 +1,19 @@
 {
   "version": 2,
-  "functions": {
-    "api/index.js": {
-      "memory": 1024,
-      "maxDuration": 10,
-      "includeFiles": "out/core/**/*.js"
+  "installCommand": "pnpm install",
+  "outputDirectory": "out/core",
+  "buildCommand": "pnpm build && pnpm bundle",
+  "framework": null,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "api/index.js"
+      "dest": "index.js"
     }
   ]
 }
