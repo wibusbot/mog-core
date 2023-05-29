@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "buildCommand": "pnpm build && pnpm bundle",
   "builds": [
     {
       "src": "out/core/index.js",
