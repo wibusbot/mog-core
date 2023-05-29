@@ -1,24 +1,18 @@
 {
   "version": 2,
   "installCommand": "pnpm install",
-  "outputDirectory": "out",
-  "buildCommand": "pnpm build && pnpm bundle:core",
+  "outputDirectory": "api",
+  "buildCommand": "pnpm build && pnpm bundle:core && mv out/core api",
   "framework": null,
-  "builds": [
-    {
-      "src": "core/**/*.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": [
-          "core/**/*"
-        ]
-      }
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "@vercel/node"
     }
-  ],
+  },
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/core/index.js"
+      "dest": "/api/index.js"
     }
   ]
 }
