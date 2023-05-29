@@ -1,4 +1,5 @@
 {
+  "version": 2,
   "buildCommand": "pnpm build && pnpm bundle",
   "builds": [
     {
@@ -11,5 +12,5 @@
       "src": "/(.*)",
       "dest": "out/core/index.js"
     }
-  ],
+  ]
 }
