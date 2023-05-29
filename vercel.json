@@ -2,8 +2,19 @@
   "version": 2,
   "installCommand": "pnpm install",
   "outputDirectory": "out/core",
-  "buildCommand": "pnpm build && pnpm bundle",
+  "buildCommand": "pnpm build && pnpm bundle:core",
   "framework": null,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": [
+          "core/**/*"
+        ]
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",
