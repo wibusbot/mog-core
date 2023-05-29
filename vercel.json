@@ -3,6 +3,7 @@
   "installCommand": "pnpm install",
   "outputDirectory": "out",
   "buildCommand": "pnpm build && pnpm bundle",
+  "framework": null,
   "builds": [
     {
       "src": "out/core/index.js",
